@@ -1,0 +1,37 @@
+.header-wrapper{
+    min-height: 100px;
+    max-height: max-content;
+    font-family: sans-serif;
+    width: 100vw;
+}
+.header
+{
+    /* background:linear-gradient(90deg,rgb(152, 240, 152),rgb(57, 206, 233),rgb(10, 33, 207)); */
+        background:linear-gradient(90deg,rgb(120,120,120),rgb(90,90,90),rgb(60,60,60),rgb(30, 30, 30),black);
+         
+         /* background:linear-gradient(90deg,rgb(30, 100, 30),rgb(70, 140, 70),rgb(110,180,110),rgb(40, 40, 40),black); */
+
+    background-color: rgb(44, 44, 44);
+    min-height: 100px;
+    color: rgb(255, 255, 255);
+    /* font-size: 18px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* justify-content: center; */
+}
+.header h1{
+    margin: 0 50px;
+    font-size: 35px;
+    text-shadow: 2px 2px 0 rgb(255, 0, 0);
+    /* font-weight: bolder; */
+}
+.username {
+    color: white;
+    font-size: 20px;
+}
+
+.user-account {
+    display: inline-flex;
+    align-items: center;
+}

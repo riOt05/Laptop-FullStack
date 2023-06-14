@@ -1,0 +1,120 @@
+.insert
+{
+    width: 100vw;
+    height: calc(100vh - 100px);
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.insert_det{
+    /* background-color: red; */
+    width: 100%;
+}
+.Insert
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.insert-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.insert h2
+{
+    color: rgb(3, 3, 3);
+    /* margin-left: 150px; */
+}
+.insert
+{
+    width:30vw;
+    height: 65vh;
+    margin-top: 40px;
+    /* background-color: aquamarine; */
+    border: 2px solid black;
+    border-radius: 7px;
+    box-shadow: 0 0 5px black;
+    padding: 20px 20px;
+}
+.insert-input-wrapper{
+    width: 100%;
+    height: 90%;
+}
+.insert-inputDiv{
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 20px 0;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid rgb(137, 136, 136);
+    position: relative;
+}
+.insert-inputDiv:hover{
+    border-color: black;
+}
+.insert-input{
+    height: 0px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+.insert-inputDiv:has(.insert-input:focus,.insert-input:valid) .insert-input{
+    height: 95%;
+    width: 90%;
+    margin: 0 5%;
+    /* background-color: red; */
+}
+.input-rec{
+    margin: 0 10px;
+    background-color: white;
+    width: max-content;
+    padding: 0 10px;
+    transition: 0.2s;
+}
+.insert-inputDiv:has(.insert-input:focus,.insert-input:valid) .input-rec{
+    position: absolute;
+    z-index: 10;
+    transform: translateY(-150%);
+    /* color: royalblue; */
+}
+.insert-inputDiv:has(.insert-input:focus){
+    border-color: royalblue;
+    color: royalblue;
+}
+.insert_submit_div
+{
+    width: max-content;
+    height: max-content ;
+    float:right;
+}
+.insert_submit
+{
+    cursor: pointer;
+    background-color: blue;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+}
+.insert_submit:active
+{
+    transform: scale(0.95);
+}
+.insert_submit:hover
+{
+    background-color: rgb(69, 241, 11);
+    color: black;
+    font-size: 15px;
+}
+
+input[type = 'number']::-webkit-inner-spin-button, input[type = 'number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}

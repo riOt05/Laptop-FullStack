@@ -1,0 +1,120 @@
+.login
+{
+    width: 100vw;
+    height: fit-content;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.login_det
+{
+    width:30vw;
+    height: 35vh;
+    margin-top: 100px;
+    /* background-color: aquamarine; */
+    padding: 20px 20px;
+    border: 2px solid black;
+    border-radius: 7px;
+    box-shadow: 0 0 5px black;
+}
+.login_det h2
+{
+    color: rgb(3, 3, 3);
+    /* margin-left: 150px; */
+}
+.login_up
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login_up h2:hover{
+    transform: scale(1.1);
+}
+.login-input-wrapper{
+    /* background-color: red; */
+    width: 100%;
+    height: fit-content;
+}
+.login-inputDiv{
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 20px 0;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid rgb(137, 136, 136);
+    position: relative;
+}
+.login-inputDiv:hover{
+    border-color: black;
+}
+.login-input{
+    height: 0px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+.login-inputDiv:has(.login-input:focus,.login-input:valid) .login-input{
+    height: 95%;
+    width: 90%;
+    margin: 0 5%;
+    /* background-color: red; */
+}
+.input-rec{
+    margin: 0 10px;
+    background-color: white;
+    width: max-content;
+    padding: 0 10px;
+    transition: 0.2s;
+}
+.login-inputDiv:has(.login-input:focus, .login-input:valid) .input-rec{
+    position: absolute;
+    z-index: 10;
+    transform: translateY(-150%);
+}
+.login-inputDiv:has(.login-input:focus) {
+    color: royalblue;
+    border-color: royalblue;
+}
+.login_submit_div
+{
+    width: max-content;
+    height: max-content ;
+    float:right;
+}
+.show_pass_wrap
+{
+    display: flex;
+    gap:5px;
+}
+.login_submit
+{
+    cursor: pointer;
+    background-color: blue;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+}
+.login_submit:active
+{
+    transform: scale(0.95);
+}
+.login_submit:hover
+{
+    background-color: rgb(69, 241, 11);
+    color:black;
+    font-size: 15px;
+}
+.frpass_wrap{width: fit-content;height: fit-content;
+margin-top: 20px;}
+.frpass{color: blue;}
+.frpass:hover{color: red;}
+.frpass:active{font-size: 15px;color: blue;}

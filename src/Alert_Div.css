@@ -1,0 +1,25 @@
+.alert_wrap
+{
+    height: 20vh;
+    width: 20vw;
+    background:linear-gradient(90deg,#bef8d2,#bae5f9);
+    /* background-color: hsl(189, 100%, 75%); */
+    position: absolute;
+    bottom: -100%;
+    transform: translateY(-100%);
+    right: 0;
+    margin: 20px;
+    transition: 1s;
+    border: 2px solid rgb(39, 37, 37);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.alert_wrap.alert_wrap-on{
+    bottom: 0;
+    transform: translateY(0%);
+}

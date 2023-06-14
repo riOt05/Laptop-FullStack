@@ -1,0 +1,120 @@
+.get
+{
+    width: 100vw;
+    height: calc(100vh - 100px);
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.get-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Get
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
+.get h2
+{
+    color: rgb(3, 3, 3);
+    /* margin-left: 150px; */
+}
+.get
+{
+    width:25vw;
+    height: 30vh;
+    margin-top: 100px;
+    /* background-color: aquamarine; */
+    padding: 10px 10px;
+    border: 2px solid black;
+    border-radius: 7px;
+    box-shadow: 0 0 5px black;
+}
+.get-input-wrapper{
+    /* background-color: red; */
+    width: 100%;
+    height: 90%;
+}
+.get-inputDiv{
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 20px 0;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid rgb(137, 136, 136);
+    position: relative;
+}
+.get-inputDiv:hover{
+    border-color: black;
+}
+.get-input{
+    height: 0px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+.get-inputDiv:has(.get-input:focus,.get-input:valid) .get-input{
+    height: 95%;
+    width: 90%;
+    margin: 0 5%;
+    /* background-color: red; */
+}
+.input-rec{
+    margin: 0 10px;
+    background-color: white;
+    width: max-content;
+    padding: 0 10px;
+    transition: 0.2s;
+}
+.get-inputDiv:has(.get-input:focus,.get-input:valid) .input-rec{
+    position: absolute;
+    z-index: 10;
+    transform: translateY(-150%);
+    /* color: royalblue; */
+}
+.get-inputDiv:has(.get-input:focus){
+    border-color: royalblue;
+    color: royalblue;
+}
+.get_submit_div
+{
+    width: max-content;
+    height: max-content ;
+    float:right;
+}
+.show_pass_wrap
+{
+    display: flex;
+    gap:5px;
+}
+.get_submit
+{
+    cursor: pointer;
+    background-color: blue;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+}
+.get_submit:active
+{
+    transform: scale(0.95);
+}
+.get_submit:hover
+{
+    background-color: rgb(69, 241, 11);
+    color:black;
+    font-size: 15px;
+}
